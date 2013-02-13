@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.availabilityCalendar.css">
+        <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+        
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div id="calendar-options" class="container">
+          <div>
+            Set day hour min/max:<br />
+            <div id="maxMin-slider"></div>
+          </div>
+          <div>
+            Number of periods per hour: <select id="period_length"> 
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          
+          <div>
+            Period selection:
+            enable: <input name="enable_selection" type="radio" value="1" checked="checked">
+            disable: <input name="enable_selection" type="radio" value="0">
+          </div>
+        </div>
+        
+        <div id="calendar"></div>
+        
+        <div id="controls" class="container">
+          <div>
+          Add a period:<br />
+          Date (YYYY-MM-YY): <input type="text" id="date" placeholder="2013-02-16" value="2013-02-16"/>, time (HH:MM) from: <input type="text" id="start" placeholder="12:00" value="12:00"/> to <input type="text" id="end" placeholder="14:00" value="14:00"/>
+          <input type="button" id="addAvailabilities" value="Highlight in calendar" />
+          </div>
+          
+          <br /><br />
+          
+          <input type="button" id="getAvailabilities" value="Get selected periods from calendar" />
+          <div id="availabilities"></div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+        
+        <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        
+        <script src="js/vendor/jquery.event.drag-2.2.js"></script>
+        <script src="js/vendor/jquery.event.drag.live-2.2.js"></script>
+        <script src="js/vendor/jquery.event.drop-2.2.js"></script>
+        <script src="js/vendor/jquery.event.drop.live-2.2.js"></script>
+        <script src="js/vendor/jquery.ba-resize.js"></script>
+        <script src="js/vendor/jquery.getscrollbarwidth.js"></script>
+        <script src="js/vendor/jquery.nouislider.min.js"></script>
+        <script src="js/disableSelection.js"></script>
+        <script src="js/jquery.availabilityCalendar.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+        /*
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+            */
+        </script>
+    </body>
+</html>

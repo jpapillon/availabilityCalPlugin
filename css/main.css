@@ -1,0 +1,629 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+* {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 13px;
+}
+
+#calendar {
+  width: 900px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.green {
+  color: #90CA77;
+}
+
+.green-bg {
+  background-color: #90CA77;
+}
+
+.blue {
+  color: #81C6DD;
+}
+
+.blue-bg {
+  background-color: #81C6DD;
+}
+
+.yellow {
+  color: #E9B64D;
+}
+
+.yellow-bg {
+  background-color: #E9B64D;
+}
+
+.orange {
+  color: #E48743;
+}
+
+.orange-bg {
+  background-color: #E48743;
+}
+
+.red {
+  color: #9E3B33;
+}
+
+.red-bg {
+  background-color: #9E3B33;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+#calendar-options {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#calendar-options > div {
+  margin-bottom: 10px;
+}
+
+#calendar-time-range-container {
+  overflow: auto;
+}
+#maxMin-slider-container > div {
+  font-weight: bold;
+  margin: 0 40px;
+}
+
+#controls {
+  margin-top: 40px;
+}
+
+#controls input[type=text] {
+  width: 80px;
+}
+#maxMin-slider {
+  margin: 10px 50px;
+  background: #efefef;
+  height: 12px;
+  -webkit-touch-callout: none;
+}
+#maxMin-slider .noUi-midBar {
+  height: 100%;
+  z-index: 0;
+  background: #d7ffc1;
+  -webkit-touch-callout: none;
+}
+#maxMin-slider .noUi-handle.noUi-lowerHandle .infoBox {
+  left: -40px;
+  text-align: right;
+}
+#maxMin-slider .noUi-handle.noUi-upperHandle .infoBox {
+  left: 21px;
+  text-align: left;
+}
+#maxMin-slider .noUi-handle > div {
+  position: absolute;
+  width: 16px;
+  height: 18px;
+  top: -3px;
+  left: -8px;
+  z-index: 5;
+  background-color: #e2e2e2;
+}
+#maxMin-slider .noUi-handle > div:hover,
+#maxMin-slider .noUi-handle > div.noUi-activeHandle {
+  background-color: #c9c9c9;
+}
+#maxMin-slider .noUi-handle > div .infoBox {
+  width: 35px;
+  position: relative;
+  top: 2px;
+  font-size: 10px;
+}
+
+
+.ac-period-cell {
+  position: relative;
+}
+.ac-period-cell .ac-period-content {
+  padding: 5px;
+}
+.ac-period-cell.available {
+  cursor: pointer;
+}
+.ac-period-cell.available:hover {
+  background-color: #b6ff8e !important;
+}
+.ac-period-cell.available:active {
+  background-color: #c0ff9d !important;
+}
+.ac-period-cell.select_for_booking {
+  background-color: #a6ff74 !important;
+}
+.ac-period-cell.select_for_booking:hover {
+  background-color: #a6ff74 !important;
+}
+.ac-period-cell .product-cell-choices {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 99999;
+  left: 0;
+  list-style-type: none;
+  background-color: #efefef;
+  min-width: 150px;
+  border: 1px solid #d6d6d6;
+}
+.ac-period-cell .product-cell-choices > .product-cell-choice {
+  padding: 5px;
+  border-bottom: 1px solid #d6d6d6;
+}
+.ac-period-cell .product-cell-choices > .product-cell-choice:hover {
+  background-color: #e2e2e2;
+}
+.ac-period-cell .product-cell-choices > .product-cell-choice:last-child {
+  border: 0;
+}
+.sales_product_periods {
+  list-style-type: none;
+  padding: 0;
+}
+.sales_product_periods ul {
+  list-style-type: none;
+  margin: 0 0 10px 20px;
+  padding: 0;
+}
+.ac-container table tr:hover td {
+  background-color: transparent;
+}
+.ac-controls {
+  padding: 10px 0;
+  overflow: auto;
+  text-align: center;
+  line-height: 30px;
+}
+.ac-controls > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.ac-controls > .button {
+  color: #FFF;
+  padding: 3px 10px;
+  background-color: #81C6DD;
+  border: 1px solid #71B6CD;
+  cursor: pointer;
+  height: 22px;
+  line-height: 22px;
+}
+.ac-controls > .top-date-range {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.ac-controls .button:hover {
+  background-color: #91D6ED;
+  border-color: #81C6DD;
+}
+.ac-controls .button:active {
+  background-color: #71B6CD;
+  border-color: #61A6BD;
+}
+.ac-controls > .button:first-child {
+  margin-right: 10px;
+}
+.ac-controls > .button:last-child {
+  margin-left: 10px;
+}
+.ac-content-container {
+  overflow: auto;
+  overflow-x: hidden;
+}
+.ac-top tr td,
+.ac-content tr td {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.ac-top-day {
+  text-align: center;
+  font-size: 14px;
+  /*border-bottom: 1px solid #DDD !important;*/
+
+}
+.ac-top-day .ac-top-day-date {
+  font-size: 12px;
+}
+.ac-top-day .ac-top-day-content {
+  padding: 5px 0;
+  margin: 0 5px 5px 0;
+}
+.ac-top-day.today .ac-top-day-content {
+  background-color: #FFFCC9;
+}
+.ac-top-day:last-child .ac-top-day-content {
+  margin-right: 0;
+}
+.ac-top-day-name {
+  font-size: 13px;
+  padding: 5px 0;
+}
+.ac-top-hours-col {
+  /*border-bottom: 1px solid #DDD !important;*/
+
+}
+.ac-hours-col {
+  background-color: #FFF;
+}
+.ac-hour-cell {
+  margin: 0 5px 5px 0;
+  /*border-bottom: 1px solid #DDD;*/
+
+}
+.ac-hour-cell:last-child {
+  margin-bottom: 0;
+}
+.ac-day-col:last-child .ac-period-cell {
+  margin-right: 0;
+}
+.ac-period-cell {
+  margin: 0 5px 5px 0;
+  /*border-bottom: 1px dotted #DDD;
+  background-color: #FFF;
+  border-left: 1px solid #DDD;*/
+
+  background-color: #F5F5F5;
+}
+.ac-period-cell:last-child {
+  margin-bottom: 0;
+}
+.ac-period-cell-border {
+  /*border-bottom: 1px solid #DDD;*/
+
+}
+.ac-hour-cell-content {
+  padding: 5px 20px 5px 2px;
+  text-align: right;
+  font-size: 13px;
+}
+/* selection */
+.ac-all-day {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.ac-period-cell:hover {
+  background-color: #E7FFD1;
+  border-color: #A7DFA1;
+}
+.ac-period-cell.available:hover {
+  background-color: #E7FFD1;
+  border-color: #A7DFA1;
+}
+.selection {
+  position: absolute;
+  opacity: 0.5;
+}
+.size2 {
+  height: 118px;
+  line-height: 118px;
+}
+.size3 {
+  height: 178px;
+  line-height: 178px;
+}
+.available {
+  background-color: #D7FFC1;
+  border-color: #A7DFA1;
+}
+.ac-period-cell.unavailable:hover,
+.unavailable {
+  background-color: #E5E5E5;
+  border-color: #CCC;
+}
+.active {
+  background-color: #E7FFD1;
+  border-color: #A7DFA1;
+}
+.active.rm {
+  background-color: #FFE9D8;
+  border-color: #DDD;
+}
+.ac-calendar.disabled .ac-period-cell select {
+  background-color: #d7ffc1;
+  border: 0;
+}
+.ac-calendar.disabled .ac-period-cell:hover {
+  background-color: #F5F5F5;
+}
+.ac-calendar.disabled .ac-period-cell.available:hover {
+  background-color: #D7FFC1;
+}
+.ac-top-hours-col,
+.ac-hours-col {
+  width: 107px;
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

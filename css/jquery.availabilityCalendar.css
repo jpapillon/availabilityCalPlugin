@@ -1,0 +1,181 @@
+.ac-container table tr:hover td {
+  background-color: transparent;
+}
+
+.ac-controls {
+  padding: 10px 0;
+  overflow: auto;
+  text-align: center;
+  line-height: 30px;
+}
+
+.ac-controls > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ac-controls > .button {
+  color: #FFF;
+  padding: 3px 10px;
+  background-color: #81C6DD;
+  border: 1px solid #71B6CD;
+  cursor: pointer;
+  height: 22px;
+  line-height: 22px;
+}
+
+.ac-controls > .top-date-range {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.ac-controls .button:hover {
+  background-color: #91D6ED;
+  border-color: #81C6DD;
+}
+
+.ac-controls .button:active {
+  background-color: #71B6CD;
+  border-color: #61A6BD;
+}
+
+.ac-controls > .button:first-child {
+  margin-right: 10px;
+}
+
+.ac-controls > .button:last-child {
+  margin-left: 10px;
+}
+
+.ac-content-container {
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.ac-top tr td,
+.ac-content tr td {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.ac-top-day {
+  text-align: center;
+  font-size: 14px;
+  /*border-bottom: 1px solid #DDD !important;*/
+}
+
+.ac-top-day.today {
+}
+
+.ac-top-day-content {
+  padding: 5px 0;
+  /*border-left: 1px solid #DDD;*/
+}
+
+.ac-top-day-name {
+  font-size: 13px;
+  padding: 5px 0;
+}
+
+.ac-top-hours-col,
+.ac-hours-col {
+}
+
+.ac-top-hours-col {
+  /*border-bottom: 1px solid #DDD !important;*/
+}
+
+.ac-hours-col {
+  background-color: #FFF;
+}
+
+.ac-hour-cell {
+  margin: 0 5px 5px 0;
+  /*border-bottom: 1px solid #DDD;*/
+}
+
+.ac-hour-cell:last-child {
+  margin-bottom: 0;
+}
+
+.ac-day-col:last-child .ac-period-cell {
+  margin-right: 0;
+}
+
+.ac-period-cell {
+  margin: 0 5px 5px 0;
+  /*border-bottom: 1px dotted #DDD;
+  background-color: #FFF;
+  border-left: 1px solid #DDD;*/
+  background-color: #F5F5F5;
+}
+
+.ac-period-cell:last-child {
+  margin-bottom: 0;
+}
+
+.ac-period-cell-border {
+  /*border-bottom: 1px solid #DDD;*/
+}
+
+.ac-hour-cell-content {
+  padding: 5px 20px 5px 2px;
+  text-align: right;
+  font-size: 13px;
+}
+
+
+
+
+/* selection */
+.ac-all-day {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.ac-period-cell:hover {
+  background-color: #E7FFD1;
+  border-color: #A7DFA1;
+}
+
+.ac-period-cell.available:hover {
+  background-color: #E7FFD1;
+  border-color: #A7DFA1;
+}
+
+.selection {
+  position: absolute;
+  opacity: 0.5;
+}
+
+.size2 {
+  height: 118px;
+  line-height: 118px;
+  }
+.size3 {
+  height: 178px;
+  line-height: 178px;
+}
+   
+.available {
+  background-color: #D7FFC1;
+  border-color: #A7DFA1;
+}
+
+.ac-period-cell.unavailable:hover,
+.unavailable {
+  background-color: #E5E5E5;
+  border-color: #CCC;
+}
+
+.active {
+  background-color: #E7FFD1;
+  border-color: #A7DFA1;
+}
+
+.active.rm {
+  background-color: #FFE9D8;
+  border-color: #DDD;
+}
